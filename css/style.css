@@ -1,9 +1,9 @@
 :root {
-    --main-color :#0d1b2a;
+    --main-color :#d62828;
     --transition: .5s;
-    --background-color: #84a59d;
-    --light-color: #f7ede2;
-    --dark-color: #415a77;
+    --background-color: #8ecae6;
+    --light-color: #e9edc9;
+    --dark-color: #14213d;
 
 }
 * {
@@ -180,7 +180,7 @@ position: relative;
 }
 .header .container .nav-bar> li > a {
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--dark-color);
     height: 72px;
     padding: 0 30px;
     position: relative;
@@ -209,7 +209,7 @@ position: relative;
     height: 4px;
     top: 0;
     left: -100%;
-    background-color: var(--background-color);
+    background-color: var(--main-color);
     transition: var(--transition);
 }
 .header .container .nav-bar >  li > a:hover {
@@ -1202,7 +1202,7 @@ position: relative;
     position: absolute;
     width: 0;
     height: 50%;
-    background-color: var(--dark-color);
+    background-color: white;
     transition: var(--transition);
     z-index: -1;
 }
@@ -1217,9 +1217,6 @@ position: relative;
 .pricing .container .box:hover::before ,
 .pricing .container .box:hover::after {
     width: 100%;
-}
-.pricing .container .box:hover ul li {
-    color: var(--light-color);
 }
 .pricing .container .popular {
     top: -20px;
@@ -1257,7 +1254,7 @@ position: relative;
     
 }
 .pricing .container .box:hover .label::before {
-    border-color: transparent var(--dark-color) transparent transparent;
+    border-color: transparent white transparent transparent;
 }
 .pricing .container .box .price {
     display: flex;
@@ -1543,7 +1540,7 @@ position: relative;
 /* end discount  */
 /* start footer  */
 .footer {
-    background-color: var(--background-color);
+    background-color: var(--dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
@@ -1560,18 +1557,13 @@ position: relative;
     grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
     gap: 40px;
 }
-.footer .container .box {
 
-}
-.footer .container .box .social {
-
-}
 .footer .container .box .social h1 {
     font-size: 45px;
     color: var(--main-color);
 }
 .footer .container .box .social i {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--main-color);
     padding: 15px;
     font-size: 20px;
@@ -1606,9 +1598,6 @@ position: relative;
     color: var(--main-color);
     margin-right: 10px;
 }
-.footer .container .box .locations {
-
-}
 .footer .container .box .locations .address {
     display: flex;
     align-items: center;
@@ -1623,7 +1612,7 @@ position: relative;
     line-height: 1.8;
 }
 .footer .container .box .gallery {
-    background-color: var(--background-color);
+    background-color: inherit;
 }
 .footer .container .box .gallery img {
     width: 70px;
@@ -1633,7 +1622,7 @@ position: relative;
 .footer .last {
     padding-top: 50px;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--dark-color);
     color: var(--main-color);
     border-top: 1px solid var(--main-color);
     word-spacing: 12px;
